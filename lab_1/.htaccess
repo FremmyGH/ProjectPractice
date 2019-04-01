@@ -1,5 +1,15 @@
-RewriteEngine On 
-RewriteCond %{REQUEST_FILENAME} !-d 
-RewriteCond %{REQUEST_FILENAME} !-f 
-RewriteCond %{REQUEST_FILENAME}.php -f 
-RewriteRule (.*) $1.php [L]
+# Запускаем движок замены
+
+RewriteEngine on
+
+ # Если запрашиваемый объект не папка
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+ # если запрашиваемый объект с дописанным расширением php - файл
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+ # делаем замену с дописыванием .php
+
+RewriteRule ^(.*)$ $1.php [L]
