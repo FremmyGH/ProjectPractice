@@ -1,0 +1,51 @@
+{
+    "url": "pp/lab_1_New/Path/32",
+    "response": "{\"numb_letter\":\"\\u0442\\u0440\\u0438\\u0434\\u0446\\u0430\\u0442\\u044c \\u0434\\u0432\\u0430 \"}",
+    "method": "GET"
+}
+{
+    "url": "pp/lab_1_New/Path/fib/6",
+    "response": "{\"result\":8}",
+    "method": "GET"
+}
+{
+    "url": "pp/lab_1_New/Path/fib/12",
+    "response": "{\"result\":144}",
+    "method": "GET"
+}
+{
+    "url": "pp/lab_1_New/Path/fib/123",
+    "response": "{\"result\":2.2698374052006954e+25}",
+    "method": "GET"
+}
+{
+    "url": "pp/lab_1_New/Path/region/72",
+    "response": "{\"result\":\"\\u0422\\u044e\\u043c\\u0435\\u043d\\u0441\\u043a\\u0430\\u044f \\u043e\\u0431\\u043b\\u0430\\u0441\\u0442\\u044c\"}",
+    "method": "GET"
+}
+{
+    "url": "pp/lab_1_New/Path/region/12",
+    "response": "{\"result\":\"\\u0420\\u0435\\u0441\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430 \\u041c\\u0430\\u0440\\u0438\\u0439 \\u042d\\u043b\"}",
+    "method": "GET"
+}
+{
+    "url": "pp/lab_1_New/Request/?date=12.12.2018",
+    "result": "Wednesday",
+    "method": "GET"
+}
+{
+    "url": "pp/lab_1_New/Request/?a=-4&b=4&c=3",
+    "result": [
+        -0.5,
+        1.5
+    ],
+    "method": "GET"
+}
+{
+    "url": "pp/lab_1_New/Request/?a=-6&b=4&c=3",
+    "result": [
+        -0.4484026266372383,
+        1.115069293303905
+    ],
+    "method": "GET"
+}
