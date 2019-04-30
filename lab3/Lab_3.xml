@@ -1,0 +1,461 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/InsertClient</Action>
+  </s:Header>
+  <s:Body>
+    <InsertClient xmlns="http://tempuri.org/">
+      <fio>Дмитрий</fio>
+    </InsertClient>
+  </s:Body>
+  
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <InsertClientResponse xmlns="http://tempuri.org/">
+      <InsertClientResult>Id добавленного клиента: 2</InsertClientResult>
+    </InsertClientResponse>
+  </s:Body>
+</s:Envelope>
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/InsertClient</Action>
+  </s:Header>
+  <s:Body>
+    <InsertClient xmlns="http://tempuri.org/">
+      <fio>Алексей</fio>
+    </InsertClient>
+  </s:Body>
+  
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <InsertClientResponse xmlns="http://tempuri.org/">
+      <InsertClientResult>Id добавленного клиента: 3</InsertClientResult>
+    </InsertClientResponse>
+  </s:Body>
+</s:Envelope>
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/InsertClient</Action>
+  </s:Header>
+  <s:Body>
+    <InsertClient xmlns="http://tempuri.org/">
+      <fio>Марсель</fio>
+    </InsertClient>
+  </s:Body>
+</s:Envelope> 
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <InsertClientResponse xmlns="http://tempuri.org/">
+      <InsertClientResult>Id добавленного клиента: 4</InsertClientResult>
+    </InsertClientResponse>
+  </s:Body>
+</s:Envelope>
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/UpdateClient</Action>
+  </s:Header>
+  <s:Body>
+    <UpdateClient xmlns="http://tempuri.org/">
+      <id>4</id>
+      <fio>Марс</fio>
+    </UpdateClient>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <UpdateClientResponse xmlns="http://tempuri.org/">
+      <UpdateClientResult>Клиент 4 обновлен</UpdateClientResult>
+    </UpdateClientResponse>
+  </s:Body>
+</s:Envelope>
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/DeleteClient</Action>
+  </s:Header>
+  <s:Body>
+    <DeleteClient xmlns="http://tempuri.org/">
+      <id>4</id>
+    </DeleteClient>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <DeleteClientResponse xmlns="http://tempuri.org/">
+      <DeleteClientResult>Клиент удален</DeleteClientResult>
+    </DeleteClientResponse>
+  </s:Body>
+</s:Envelope>
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/GetClient</Action>
+  </s:Header>
+  <s:Body>
+    <GetClient xmlns="http://tempuri.org/" />
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <GetClientResponse xmlns="http://tempuri.org/">
+      <GetClientResult>
+        <xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="Client">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="ID_Client" type="xs:int" minOccurs="0" />
+                      <xs:element name="Name" type="xs:string" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+          </xs:element>
+        </xs:schema>
+        <diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <NewDataSet xmlns="">
+            <Client diffgr:id="Client1" msdata:rowOrder="0">
+              <ID_Client>1</ID_Client>
+              <Name>Иван</Name>
+            </Client>
+            <Client diffgr:id="Client2" msdata:rowOrder="1">
+              <ID_Client>2</ID_Client>
+              <Name>Дмитрий</Name>
+            </Client>
+            <Client diffgr:id="Client3" msdata:rowOrder="2">
+              <ID_Client>3</ID_Client>
+              <Name>Алексей</Name>
+            </Client>
+          </NewDataSet>
+        </diffgr:diffgram>
+      </GetClientResult>
+    </GetClientResponse>
+  </s:Body>
+</s:Envelope>
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/InsertRequest</Action>
+  </s:Header>
+  <s:Body>
+    <InsertRequest xmlns="http://tempuri.org/">
+      <id>2</id>
+    </InsertRequest>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <InsertRequestResponse xmlns="http://tempuri.org/">
+      <InsertRequestResult>Id добавленной заявки: 1</InsertRequestResult>
+    </InsertRequestResponse>
+  </s:Body>
+</s:Envelope>
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/InsertRequest</Action>
+  </s:Header>
+  <s:Body>
+    <InsertRequest xmlns="http://tempuri.org/">
+      <id>1</id>
+    </InsertRequest>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <InsertRequestResponse xmlns="http://tempuri.org/">
+      <InsertRequestResult>Id добавленной заявки: 2</InsertRequestResult>
+    </InsertRequestResponse>
+  </s:Body>
+</s:Envelope>
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/UpdateRequest</Action>
+  </s:Header>
+  <s:Body>
+    <UpdateRequest xmlns="http://tempuri.org/">
+      <idOr>1</idOr>
+      <idCl>1</idCl>
+    </UpdateRequest>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <UpdateRequestResponse xmlns="http://tempuri.org/">
+      <UpdateRequestResult>Заявка 1 обновлена</UpdateRequestResult>
+    </UpdateRequestResponse>
+  </s:Body>
+</s:Envelope>
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/DeleteRequest</Action>
+  </s:Header>
+  <s:Body>
+    <DeleteRequest xmlns="http://tempuri.org/">
+      <id>2</id>
+    </DeleteRequest>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <DeleteRequestResponse xmlns="http://tempuri.org/">
+      <DeleteRequestResult>Заявка удалена</DeleteRequestResult>
+    </DeleteRequestResponse>
+  </s:Body>
+</s:Envelope>
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/GetRequest</Action>
+  </s:Header>
+  <s:Body>
+    <GetRequest xmlns="http://tempuri.org/" />
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <GetRequestResponse xmlns="http://tempuri.org/">
+      <GetRequestResult>
+        <xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="Request">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="ID_Request" type="xs:int" minOccurs="0" />
+                      <xs:element name="Client_ID" type="xs:int" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+          </xs:element>
+        </xs:schema>
+        <diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <NewDataSet xmlns="">
+            <Request diffgr:id="Request1" msdata:rowOrder="0">
+              <ID_Request>1</ID_Request>
+              <Client_ID>1</Client_ID>
+            </Request>
+          </NewDataSet>
+        </diffgr:diffgram>
+      </GetRequestResult>
+    </GetRequestResponse>
+  </s:Body>
+</s:Envelope>
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/InsertService</Action>
+  </s:Header>
+  <s:Body>
+    <InsertService xmlns="http://tempuri.org/">
+      <name>Такси</name>
+      <price>100</price>
+    </InsertService>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <InsertServiceResponse xmlns="http://tempuri.org/">
+      <InsertServiceResult>Id добавленной услуги: 1</InsertServiceResult>
+    </InsertServiceResponse>
+  </s:Body>
+</s:Envelope>
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/InsertService</Action>
+  </s:Header>
+  <s:Body>
+    <InsertService xmlns="http://tempuri.org/">
+      <name>Уборка</name>
+      <price>150</price>
+    </InsertService>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <InsertServiceResponse xmlns="http://tempuri.org/">
+      <InsertServiceResult>Id добавленной услуги: 2</InsertServiceResult>
+    </InsertServiceResponse>
+  </s:Body>
+</s:Envelope>
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/UpdateService</Action>
+  </s:Header>
+  <s:Body>
+    <UpdateService xmlns="http://tempuri.org/">
+      <id>1</id>
+      <name>Доставка</name>
+      <price>400</price>
+    </UpdateService>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <UpdateServiceResponse xmlns="http://tempuri.org/">
+      <UpdateServiceResult>Услуга 1 обновлена</UpdateServiceResult>
+    </UpdateServiceResponse>
+  </s:Body>
+</s:Envelope>
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/DeleteService</Action>
+  </s:Header>
+  <s:Body>
+    <DeleteService xmlns="http://tempuri.org/">
+      <id>2</id>
+    </DeleteService>
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <DeleteServiceResponse xmlns="http://tempuri.org/">
+      <DeleteServiceResult>Услуга удалена</DeleteServiceResult>
+    </DeleteServiceResponse>
+  </s:Body>
+</s:Envelope>
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/GetService</Action>
+  </s:Header>
+  <s:Body>
+    <GetService xmlns="http://tempuri.org/" />
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <GetServiceResponse xmlns="http://tempuri.org/">
+      <GetServiceResult>
+        <xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="Service">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="ID_Service" type="xs:int" minOccurs="0" />
+                      <xs:element name="Name" type="xs:string" minOccurs="0" />
+                      <xs:element name="Price" type="xs:double" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+          </xs:element>
+        </xs:schema>
+        <diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <NewDataSet xmlns="">
+            <Service diffgr:id="Service1" msdata:rowOrder="0">
+              <ID_Service>1</ID_Service>
+              <Name>Доставка</Name>
+              <Price>400</Price>
+            </Service>
+          </NewDataSet>
+        </diffgr:diffgram>
+      </GetServiceResult>
+    </GetServiceResponse>
+  </s:Body>
+</s:Envelope>
+
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService1/GetRequest_Service</Action>
+  </s:Header>
+  <s:Body>
+    <GetRequest_Service xmlns="http://tempuri.org/" />
+  </s:Body>
+</s:Envelope>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <GetRequest_ServiceResponse xmlns="http://tempuri.org/">
+      <GetRequest_ServiceResult>
+        <xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="Request_Service">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Request_Id" type="xs:int" minOccurs="0" />
+                      <xs:element name="Service_ID" type="xs:int" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+          </xs:element>
+        </xs:schema>
+        <diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <NewDataSet xmlns="">
+            <Request_Service diffgr:id="Request_Service1" msdata:rowOrder="0">
+              <Request_Id>1</Request_Id>
+              <Service_ID>1</Service_ID>
+            </Request_Service>
+          </NewDataSet>
+        </diffgr:diffgram>
+      </GetRequest_ServiceResult>
+    </GetRequest_ServiceResponse>
+  </s:Body>
+</s:Envelope>
