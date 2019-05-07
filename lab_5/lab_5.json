@@ -1,0 +1,60 @@
+{
+    "url": "pp/lab_5/api.php?Get=Клиенты",
+    "response": "{\"GetClient\":[{\"ID_Client\":\"1\",\"Name\":\"Gabe\"},{\"ID_Client\":\"3\",\"Name\":\"\\u041f\\u0435\\u0442\\u0440\"},{\"ID_Client\":\"4\",\"Name\":\"\\u041f\\u0430\\u0432\\u0435\\u043b\"},{\"ID_Client\":\"5\",\"Name\":\"\\u041f\\u0430\\u0432\\u0435\\u043b\"},{\"ID_Client\":\"6\",\"Name\":\"\\u041f\\u0430\\u0432\\u0435\\u043b\"},{\"ID_Client\":\"7\",\"Name\":\"\\u041f\\u0430\\u0432\\u0435\\u043b\"}]}",
+    "method": "GET"
+}
+{
+    "url": "pp/lab_5/api.php?Get=Заявки",
+    "response": "{\"GetRequest\":[[\"1\",\"3\"],[\"2\",\"2\"]]}",
+    "method": "GET"
+}
+{
+    "url": "pp/lab_5/api.php?Get=Услуги",
+    "response": "{\"GetService\":[[\"1\",\"Repair\",\"400\"],[\"2\",\"\\u0422\\u0430\\u043a\\u0441\\u0438\",\"300\"]]}",
+    "method": "GET"
+}
+{
+    "url": "pp/lab_5/api.php?InsertClient=Добавить&name=FremmyTest",
+    "response": "{\"InsertClient\":\"\"}",
+    "method": "GET"
+}
+{
+    "url": "pp/lab_5/api.php?InsertRequest=Добавить&client=2",
+    "response": "{\"InsertRequest\":\"\"}",
+    "method": "GET"
+}
+{
+    "url": "pp/lab_5/api.php?InsertService=Добавить&name=FremmyService&price=123",
+    "response": "{\"InsertService\":\"\"}",
+    "method": "GET"
+}
+{
+    "url": "pp/lab_5/api.php?UpdateClient=Обновить&id=1&name=Gaben",
+    "response": "{\"UpdateClient\":\"\"}",
+    "method": "GET"
+}
+{
+    "url": "pp/lab_5/api.php?UpdateRequest=Обновить&id=2&client=3",
+    "response": "{\"UpdateRequest\":\"\"}",
+    "method": "GET"
+}
+{
+    "url": "pp/lab_5/api.php?UpdateService=Обновить&id=3&name=Serv&price=111",
+    "response": "{\"UpdateService\":\"\"}",
+    "method": "GET"
+}
+{
+    "url": "pp/lab_5/api.php?DeleteClient=Удалить&id=4",
+    "response": "{\"DeleteClient\":\"\"}",
+    "method": "GET"
+}
+{
+    "url": "pp/lab_5/api.php?DeleteRequest=Удалить&id=1",
+    "response": "{\"DeleteRequest\":\"\"}",
+    "method": "GET"
+}
+{
+    "url": "pp/lab_5/api.php?DeleteService=Удалить&id=3",
+    "response": "{\"DeleteService\":\"\"}",
+    "method": "GET"
+}
